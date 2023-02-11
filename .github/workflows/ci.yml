@@ -3,6 +3,8 @@ name: ci
 on:
   push:
 
+jobs:
+
   R-CMD-check:
     needs: [init]
     runs-on: ${{ matrix.config.os }}
