@@ -40,10 +40,10 @@ jobs:
       #   working-directory: RSPARROW_master
       #   shell: Rscript {0}
 
-      # - name: Check
-      #   uses: r-lib/actions/check-r-package@v2
-      #   with:
-      #     working-directory: R/phreeqc
+      - name: Check
+        uses: r-lib/actions/check-r-package@v2
+        with:
+          working-directory: RSPARROW_master
 
       # - name: List files
       #   if: matrix.config.os == 'ubuntu-latest' && matrix.config.r == 'release'
